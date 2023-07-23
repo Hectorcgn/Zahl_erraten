@@ -1,4 +1,35 @@
 //=====================================
 // globale settings
 //=====================================
-
+body{
+    background-image: url(../img/Dr-House.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    main{
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid rgba(255, 255, 255, 0.568);
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 50%;
+        height: 80%;
+        padding: 20px;
+        color: #fff;
+        box-shadow: 0px 0px 10px #ffe81e;
+        h1{
+            text-align: center;
+            padding-bottom: 10%
+        }
+        h2{
+            text-align: center;
+            padding-bottom: 5%;
+        }
+        section{
+            padding-bottom: 10px;
+        }
+    }
+}
