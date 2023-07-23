@@ -21,7 +21,6 @@ let rundenZähler = 0;
 roundselection.forEach(rounds => {
     rounds.addEventListener('click', () => {
         maxRunden = Number(rounds.id);
-        console.log('die ausgewählte Rundenzahl ist:', maxRunden)
     });
 });
 //funtionen
@@ -43,11 +42,11 @@ let computerNummer = computerTake();
         let userNummer = userTake();
         // Vergleichehn der Zahlen
         if (maxRunden === 0){
-            outputField.innerHTML = `<p>lege eine Runden zahl fest</p>`
+            outputField.innerHTML = `<p>🫣 Lege eine Rundenzahl fest.</p>`
             return
         } 
         if (userNummer === 0) {
-            outputField.innerHTML = `<p>Bitte gib eine Zahl ein</p>`
+            outputField.innerHTML = `<p>🤔 Bitte gib eine Zahl ein.</p>`
             return
         } 
         rundenZähler++;
@@ -57,21 +56,21 @@ let computerNummer = computerTake();
             spielverlauf.classList.remove('unsichtbar')
         }
         if (userNummer === computerNummer) {
-        outputField.textContent = `dein tipp: ${userNummer} ist richtig du hast es erraten`;
+        outputField.textContent = `Dein Tipp: ${userNummer} ist richtig du hast es erraten 🤗 ❤️!`;
         guessButton.removeEventListener('click', spielstart);
         guessButton.textContent = 'Neustart';
         guessButton.addEventListener('click', neustartSpiel);
         return
         } else if (userNummer < computerNummer) {
-            outputField.innerHTML = `<p>versuch ${rundenZähler} dein tipp ist: ${userNummer}</p><p>versuch es höher</p>`;
+            outputField.innerHTML = `<p>Versuch ${rundenZähler} dein Tipp ist: ${userNummer}</p><p>🧐 versuch es höher ☝️</p>`;
         } else if (userNummer > computerNummer) {
-            outputField.innerHTML = `<p>versuch ${rundenZähler} dein tipp ist: ${userNummer}</p><p>versuch es tiefer</p>`;
+            outputField.innerHTML = `<p>Versuch ${rundenZähler} dein Tipp ist: ${userNummer}</p><p>🧐 versuch es tiefer 👇</p>`;
         } 
     console.log('die com nummer im spiel ist:', computerNummer);
     console.log('Zahl die eingegben worden ist: ' ,userNummer);
     // if Funktion für die Runden begrenzung
     if (rundenZähler === maxRunden) {
-        outputField.innerHTML = `<p>versuch ${rundenZähler} schade die zahl war: ${computerNummer}</p><p>vielleicht beim nächsten mal</p>`;
+        outputField.innerHTML = `<p>Versuch ${rundenZähler} schade die Zahl war: ${computerNummer}.</p><p>Vielleicht beim nächsten mal 😉</p>`;
         guessButton.removeEventListener('click', spielstart);
         guessButton.textContent = 'Neustart';
         guessButton.addEventListener('click', neustartSpiel);
@@ -83,7 +82,7 @@ const neustartSpiel = () => {
     maxRunden = 0;
     rundenZähler = 0
     computerNummer = computerTake()
-    guessButton.textContent = 'guess';
+    guessButton.textContent = 'Tippp';
     inputField.value=''
     outputField.textContent =''
     roundenauswahlSection.classList.remove('unsichtbar')

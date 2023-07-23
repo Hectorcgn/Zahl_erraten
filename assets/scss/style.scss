@@ -9,3 +9,46 @@ sass --watch ./assets/scss:./assets/css
 .unsichtbar{
     display:  none;
 }
+.round-selection{
+    div{
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        font-size: 30px;
+        input{
+            width: 25px;
+            height: 25px;
+        }
+        input:hover{
+            cursor: pointer;
+        }
+    }
+}
+.input-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input{
+        font-size: 30px;
+        width: 20%;
+    }
+    button{
+        margin-top: 10px;
+        width: 20%;
+        font-size: 30px;
+        border: none;
+
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+.spielverlauf{
+    text-align: center;
+    font-size: 50px;
+}
+.output-section{
+    text-align: center;
+    font-size: 30px;
+}

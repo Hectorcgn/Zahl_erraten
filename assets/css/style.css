@@ -5,10 +5,88 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(../img/Dr-House.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding-top: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body main {
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid rgba(255, 255, 255, 0.568);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 80%;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0px 0px 10px #ffe81e;
+}
+body main h1 {
+  text-align: center;
+  padding-bottom: 10%;
+}
+body main h2 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+body main section {
+  padding-bottom: 10px;
+}
+
 /*
 befehl ürs terminal
 sass --watch ./assets/scss:./assets/css
 */
 .unsichtbar {
   display: none;
+}
+
+.round-selection div {
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 30px;
+}
+.round-selection div input {
+  width: 25px;
+  height: 25px;
+}
+.round-selection div input:hover {
+  cursor: pointer;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-section input {
+  font-size: 30px;
+  width: 20%;
+}
+.input-section button {
+  margin-top: 10px;
+  width: 20%;
+  font-size: 30px;
+  border: none;
+}
+.input-section button:hover {
+  cursor: pointer;
+}
+
+.spielverlauf {
+  text-align: center;
+  font-size: 50px;
+}
+
+.output-section {
+  text-align: center;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
