@@ -8,4 +8,7 @@
 /*
 befehl ürs terminal
 sass --watch ./assets/scss:./assets/css
-*//*# sourceMappingURL=style.css.map */
+*/
+.unsichtbar {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

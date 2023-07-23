@@ -12,18 +12,21 @@
     <h1>Nummer rate Spiel 1-100</h1>
     <section class="round-selection">
       <h2>in wie vielen versuchen kannst du die nummer erraten</h2>
-      <input type="radio" name="rounds" id="4">
+      <input type="radio" name="rounds" id="4" value="4">
       <label for="4">4</label>
-      <input type="radio" name="rounds" id="5">
+      <input type="radio" name="rounds" id="5" value="5">
       <label for="5">5</label>
-      <input type="radio" name="rounds" id="6">
+      <input type="radio" name="rounds" id="6" value="6">
       <label for="6">6</label>
-      <input type="radio" name="rounds" id="custom">
+      <input type="radio" name="rounds" id="custom" value="0">
       <label for="custom">custom</label>
     </section>
+    <section class="spielverlauf unsichtbar">
+      <div><p>hello</p></div>
+    </section>
     <section class="input-section">
-      <input type="number" name="user-input" id="user-input" value="6">
-      <button type="button">Guess</button>
+      <input type="number" name="user-input" id="user-input" required>
+      <button type="button"id="guess-button">Guess</button>
     </section>
     <section class="output-section">
     </section>
