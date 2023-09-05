@@ -17,11 +17,6 @@ Simples Zahlenratespiel, implementiert in vanilla JavaScript. Für das Styling k
 - CSS für Styling
 - LocalStorage zur Speicherung des Highscores
 
-## Setup
-
-1. Repository clonen 
-2. Abhängigkeiten installieren mit `npm install`
-3. Mit `npm start` die App starten
 
 ## Verwendung 
 
